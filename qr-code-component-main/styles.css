@@ -1,0 +1,88 @@
+
+/* 
+VARIABLES
+*/
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-Light-gray: hsl(212, 45%, 89%);
+    --color-Grayish-blue: hsl(220, 15%, 55%);
+    --color-Dark-blue: hsl(218, 44%, 22%);
+}
+
+
+body {
+    background-color: var(--color-Light-gray); 
+    font-family: 'Outfit', sans-serif;
+    margin: unset;
+    text-size-adjust: none;  /*control text inflation on smartphone*/
+    font-size: 15px;
+    min-height: 100vh;  /*constrain content height*/
+
+    /* centering content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%; /*it will not get us scroll bars we don't want that*/
+    height: auto;
+    border-radius: 0.95rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+main {
+    background-color: var(--color-white);
+    max-width: 320px;
+    padding: 1.080rem;  /*adaptive in nature while zooming  */
+    border-radius: 1.50rem;
+                /* x-axis y-axis */
+    box-shadow: 0 1.6rem 1.6rem hsla(0, 0%, 0%, 0.05);
+    text-align: center;
+    margin: 1.075rem;
+    
+}
+
+h1 {
+    font-size: 1.375rem;
+    line-height: 1.275; /*use to manage line height between sentence*/
+    margin-top: 1.1em;
+    color: var(--color-Dark-blue);
+}
+
+p {
+    line-height: 1.3;
+    color: var(--color-blue);
+    margin: 1.075rem;
+}
+
+
+/* .main {
+    padding: 30px 35px ;
+    margin: 0 auto;
+    width: 400px;
+    line-height:7rem;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;  
+}   
+
+.qr {
+    border-radius: 1rem;
+    width: 400px;
+}
+.text {
+   font-size: 15px;
+    margin: 0 auto;
+}
+ */
+
+
